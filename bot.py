@@ -24,8 +24,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Твой токен Telegram-бота
-TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
+TOKEN = '8932397702:AAEVwWm3L77Zpmaxjs2QOvaPH2kBjjism3M'
 
+bot = telebot.TeleBot(TOKEN)
 # Проверка токена
 if not TOKEN or TOKEN == 'YOUR_TOKEN_HERE':
     logger.error("Токен не настроен! Установите переменную окружения TELEGRAM_BOT_TOKEN")
