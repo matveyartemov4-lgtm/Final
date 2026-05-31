@@ -24,7 +24,7 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 # Твой токен Telegram-бота
-TOKEN = '8932397702:AAGApXMJ2mmqYRD9PrC0KyUwx0JPPr5phd4'
+TOKEN = os.environ.get('TELEGRAM_BOT_TOKEN')
 
 # Проверка токена
 if not TOKEN or TOKEN == 'YOUR_TOKEN_HERE':
